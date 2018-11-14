@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Music Festivals</title>
+	<script type="text/javascript" src="festival.js"></script>
+<style>
+	.text {
+		text-align: center;
+		font-size: 100px;
+		font-family: Times, "Times New Roman", Georgia, serif;
+		font-style: italic;
+}
+	.background {
+		height: 750px;
+		background-image: url("background12.png");
+		z-index: -1
+	}
+	.list_1 {
+		float:left;
+	}
+	.list_item{
+		float:left;
+		margin-top: 120px;
+		margin-left: 120px;
+		text-align: center;
+	}
+	.fixed {
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		z-index: 1;
+	}
+</style>
+</head>
+<body>
+	<div class="text"># MUSIC FESTIVAL #</div>
+	<div class="list_1">
+		<div class="list_item">
+			<a href="fstv_one.html"><img onmouseenter="bigger(this)" onmouseleave="normal(this)" src="one.png"></a>
+			<h3>< 힙합플레이야 ></h3>		
+		</div>
+		<div class="list_item">
+			<a href="fstv_two.html"><img onmouseenter="bigger(this)" onmouseleave="normal(this)" src="two.png"></a>
+			<h3><  WORLD DJ FESTIVAL ></h3>
+		</div>
+		<div class="list_item">
+			<a href="fstv_three.html"><img onmouseenter="bigger(this)" onmouseleave="normal(this)" src="four.png"></a>
+			<h3><  ULTRA MUSIC FESTIVAL ></h3>
+		</div>
+	</div>
+	<div class="background"></div>
+	<a href="index.html"><p class ="fixed"><img src="home-icon2.jpg" width="90" title="home"></p></a>	
+</body>
+</html>

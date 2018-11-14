@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Music Festivals</title>
+<style>
+	.top {
+		height: 150px;
+		background-position: center top;
+		background-image: url("title.png");
+		background-repeat: no-repeat;
+	}
+	.bottom {
+		height: 500px;
+		background-position: center bottom;
+		background-image: url("festival2.jpg");
+		z-index: -1;	
+	}
+	.fixed {
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		z-index: 1;
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+
+	}
+	li {
+		display: inline;
+		font-family: "Times New Roman", Times, serif;
+		font-weight: 600;
+		font-size: 15px;
+		font-style: italic;
+	}
+	li a {
+		display: inline-block;
+		font-size: 300%;
+		text-align: center;
+		padding: 60px 30px;
+		color: white;
+		text-decoration: none;
+
+	}	
+	a:active {
+		color: pink;
+		text-decoration: underline;
+	}
+	li a:hover {
+		color:pink;
+}
+	form {
+		color: white;
+		float: right;
+	}
+</style>
+</head>
+<body>
+	<audio autoplay>
+		<source src="Urban Zakapa .mp3" type="audio/mpeg">
+	</audio>
+	<div class="top"></div>
+	<ul>
+		<li><a href="festival.html">Festivals</a></li>
+		<li><a href="apply.html">Apply</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="ect.html">Ect..</a></li>
+		<li>
+		<form>
+			SEARCH <input type="text">
+			<button type="enter">ENTER</button>			
+		</form>
+		</li>
+	</ul>
+	<div class="bottom"></div>
+	<a href="index.html"><p class ="fixed"><img src="home-icon2.jpg" width="90" title="home"></p></a>
+</body>
+</html>	

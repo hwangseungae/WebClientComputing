@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Apply</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+<style>
+	div {
+		background-color: brown;
+		color: white;
+		text-align: center;
+		padding: 150px;
+	}
+	.fixed {
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		z-index: 1;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<p style = "font-size : 300%">@ Join Festival Us @<br><br></p>
+		<form>
+			Name: <input id="input_1" type="text" required></input> <span hidden='hidden'>이름을 입력하세요.</span><br><br>
+			Age: <input id="input_2" type="number" required></input> <span hidden='hidden'>나이를 입력하세요.</span><br><br>
+			Phone : <input id="input_3" type="phone" max="13" required></input> <span hidden='hidden'>번호를 입력하세요.</span><br><br>
+			Email: <input id="input_4" type="email"></input> <span hidden='hidden'>e-mail을 입력하세요.</span><br><br>
+			<button id="clk" class="btn" type="apply">Apply</button>
+			<button type="reset">Reset</button>
+		</form>
+	</div>
+	<a href="index.html"><p class ="fixed"><img src="home-icon2.jpg" width="90" title="home"></p></a>
+	<script type="text/javascript" src="apply.js"></script>
+</body>
+</html>

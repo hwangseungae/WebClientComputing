@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>About Fstival</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+<style>
+	.box {
+		height: 10em;
+		width: 50em;
+		background-color: pink;
+		color: white;
+		margin: 2px;
+	}
+	.box_2 {
+	border:50px solid #555;
+	color:white;
+	background:#555;
+	height:10em;
+	width:50em;
+	position: relative;
+}
+.box_3 {
+	height: 5em;
+	width: 10em;
+	background-color: green;
+	color: white;
+	margin: 2px;
+}
+	#panel, #flip {
+	 padding: 5px;
+	 text-align: center;
+	 background-color: skyblue;
+	 border: solid 1px #c3c3c3;
+ }
+ #panel {
+	 padding: 10px;
+	 display: none;
+ }
+	p {
+		padding: 50px;
+	}
+	body {
+		background-image: url("background13.jpg");
+		z-index: -1;
+
+	}
+	p::first-letter {
+		color: pink;
+		font-size: xx-large;
+	}
+	.fixed {
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		z-index: 1;
+	}
+
+</style>
+</head>
+<body>
+	 <p id="title">About festival</p>
+	<div>
+	    <button id="show">Show</button>
+	    <button id="hide">Hide</button>
+	  </div>
+	  <div id="in-1" class="box">A festival is an event ordinarily celebrated by a community and centering on some characteristic aspect of that community and its religion or traditions. It is often marked as a local or national holiday, mela, or eid. Next to religion and folklore, a significant origin is agricultural. Food is such a vital resource that many festivals are associated with harvest time. Religious commemoration and thanksgiving for good harvests are blended in events that take place in autumn, such as Halloween in the northern hemisphere and Easter in the southern.</p>
+	</div><br><br><br>
+<button id = "animate">Click!!</button>
+<div id="animation" class="box_2">Festivals often serve to fulfill specific communal purposes, especially in regard to commemoration or thanksgiving. The celebrations offer a sense of belonging for religious, social, or geographical groups, contributing to group cohesiveness. They may also provide entertainment, which was particularly important to local communities before the advent of mass-produced entertainment. Festivals that focus on cultural or ethnic topics also seek to inform community members of their traditions; the involvement of elders sharing stories and experience provides a means for unity among families.
+</div>
+
+<p>In Ancient Greece and Rome, festivals such as the Saturnalia were closely associated with social organisation and political processes as well as religion. In modern times, festivals may be attended by strangers such as tourists, who are attracted to some of the more eccentric or historical ones.</p>
+
+		<div id="flip">Festival Type(Up or Down)</div>
+		<div id="panel">Rock Festival<br>Hiphop Festival<br>Food Festival<br>Beer Festival<br>Ect..</div><br><br><br>
+
+		<div>
+			<button id="animation-button">*Want to click*</button>
+		</div>
+		<div id="demo-1" class="box_3">Name : Hwang Seung-ae</div>
+	  <div id="demo-2" class="box_3">tel : 010-1234-5678</div>
+	  <div id="demo-3" class="box_3">eamil : webclient@naver.com</div>
+	<script type="text/javascript" src="about.js"></script>
+	<a href="index.html"><p class ="fixed"><img src="home-icon2.jpg" width="90" title="home"></p></a>
+</body>
